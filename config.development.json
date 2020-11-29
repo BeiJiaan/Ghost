@@ -1,3 +1,32 @@
 {
-    "enableDeveloperExperiments": true
-}
+    "url": "http://blog.b-j-a.cn",
+    "server": {
+      "port": 10001,
+      "host": "0.0.0.0"
+    },
+    "database": {
+      "client": "mysql",
+      "connection": {
+        "host": "localhost",
+        "user": "root",
+        "port": "4407",
+        "password": "Bja@131125",
+        "database": "ghost_beijiaan"
+      }
+    },
+    "mail": {
+      "transport": "Direct"
+    },
+    "logging": {
+      "transports": [
+        "file",
+        "stdout"
+      ]
+    },
+    "process": "systemd",
+    "bootstrap-socket": {
+      "port": 8000,
+      "host": "localhost"
+    }
+  }
+  
